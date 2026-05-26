@@ -1,0 +1,96 @@
+<!-- product-details.component.html -->
+<div class="product-page">
+    <div class="overlay">
+
+<div class="container mt-5">
+
+    <div class="card product-card">
+
+        <div class="row g-0">
+
+            <!-- Product Image -->
+            <div class="col-md-5">
+                <img 
+                    src="{{ productDetails.image }}"
+                    class="img-fluid product-image"
+                    alt="Product Image"
+                >
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-md-7">
+
+                <div class="card-body p-4">
+
+                    <h2 class="card-title">
+                        {{ productDetails.title }}
+                    </h2>
+
+                    <p class="text-muted">
+                        {{ productDetails.category }}
+                    </p>
+
+                    <p class="rating">
+                        ★★★★☆
+                    </p>
+
+                    <p class="card-text">
+                        {{ productDetails.description }}
+                    </p>
+
+                    <div class="mb-3">
+
+                        <span class="price">
+                            ₹{{ productDetails.price }}
+                        </span>
+
+                        <span class="old-price">
+                            ₹{{ productDetails.originalPrice }}
+                        </span>
+
+                    </div>
+
+                    <span class="badge bg-success">
+                        In Stock
+                    </span>
+
+                    <!-- Quantity -->
+                    <div class="mt-4 mb-3">
+
+                        <label class="form-label fw-bold">
+                            Quantity
+                        </label>
+
+                        <input 
+                            type="number"
+                            class="form-control w-25"
+                            value="1"
+                            min="1"
+                        >
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-3">
+
+                        <button class="btn btn-primary btn-custom">
+                            Add to Cart
+                        </button>
+
+                        <button class="btn btn-outline-dark btn-custom">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>

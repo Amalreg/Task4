@@ -1,0 +1,126 @@
+/* product-details.component.css */
+
+.product-page{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    padding: 40px 0;
+}
+
+/* optional overlay */
+.overlay{
+    min-height: 100vh;
+    background: rgba(0,0,0,0.25);
+    padding: 30px;
+}
+
+/* Product Card */
+.product-card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    color: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.product-card:hover{
+    transform: scale(1.01);
+}
+
+/* Product Image */
+.product-image{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+/* Title */
+.card-title{
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Subtitle */
+.text-muted{
+    color: #d1d5db !important;
+    font-size: 18px;
+}
+
+/* Price */
+.price{
+    font-size: 32px;
+    font-weight: bold;
+    color: #facc15;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: #d1d5db;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* Rating */
+.rating{
+    color: #facc15;
+    font-size: 22px;
+}
+
+/* Input */
+.form-control{
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 10px #60a5fa;
+}
+
+/* Buttons */
+.btn-custom{
+    width: 180px;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: bold;
+    background: linear-gradient(45deg,#2563eb,#7c3aed);
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Badge */
+.badge{
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+/* Description */
+.card-text{
+    line-height: 1.8;
+    color: #f3f4f6;
+    font-size: 17px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .product-image{
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-title{
+        font-size: 28px;
+    }
+}
